@@ -1,6 +1,6 @@
 ---
 - name: playbook to create directory
-  hosts: webservers
+  hosts: ubuntu
   become: true
   tasks:
   - name: creating a file
@@ -8,5 +8,5 @@
       path: /opt/test.txt
       state: touch 
       mode: 0777
-      owner: ansadmin
+      owner: ijaz
 
